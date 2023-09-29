@@ -1,5 +1,5 @@
-import qrcode
 # pip install qrcode
+import qrcode
 
 def Generate_qr_code(text,filename):
    qr = qrcode.QRCode(
@@ -15,7 +15,7 @@ def Generate_qr_code(text,filename):
    img.save(filename)
 
 # the link you want to turn into QR
-link = 'https://google.com'
+link = input("Enter/Paste the intented link:")
 
 # filename of your QR code image
 filename = 'QRcode.png'
